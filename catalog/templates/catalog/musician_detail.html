@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Name: {{ musician.name }}</h1>
+
+  <p><strong>Albums:</strong> </p>
+
+    <ul>
+      {% for album in musician.album_set.all %}
+      <li>
+        <a href="{% url 'album-detail' album.pk %}">{{ album.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+{% endblock %}

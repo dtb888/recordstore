@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{%block title%}<title>Record Store Home</title>{% endblock %}
+
+{% block content %}
+  <h1>Record Store Home</h1>
+  <p>Welcome to RecordStore, a website developed by <em>Darryl Berry</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The store has the following record counts:</p>
+  <ul>
+    <li><strong>Albums:</strong> {{ num_albums }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Musicians:</strong> {{ num_musicians }}</li>
+  </ul>
+
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+  
+{% endblock %}
