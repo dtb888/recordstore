@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cxihgnm69q5f&!!d)se%_t$goo8#1-
 # DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pure-bastion-30732.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
