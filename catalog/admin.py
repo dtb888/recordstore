@@ -15,7 +15,7 @@ class AlbumInline(admin.TabularInline):
 class MusicianAdmin(admin.ModelAdmin):
     inlines = [AlbumInline]
     
-admin.site.register(Musician, MusicianAdmin)
+admin.site.register(Musician)
 
 admin.site.register(Genre)
 
